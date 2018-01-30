@@ -1,6 +1,6 @@
 {
   "name": "star-peeps",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "private": false,
   "description": "swapi.co based StarWars people lookup",
   "author": "Mike Hoffert",
