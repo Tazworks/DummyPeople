@@ -1,6 +1,6 @@
 import test from "ava";
-import Index from "../index";
-import People from "../people";
+import Index from "../src/index";
+import People from "../src/people";
 
 test("check file", t => {
   t.deepEqual(People.length, 87);
