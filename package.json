@@ -11,7 +11,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint index.js",
-    "build": "babel index.js --out-dir dist",
+    "build": "babel src --out-dir dist",
     "test": "ava"
   },
   "dependencies": {
