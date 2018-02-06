@@ -16,6 +16,7 @@ test("page 1", t => {
 	gender: "male",
 	hair_color: "none",
 	height: "180",
+        id: 26,
 	mass: "83",
 	name: "Ackbar",
 	skin_color: "brown mottle",
@@ -25,6 +26,7 @@ test("page 1", t => {
 	gender: "female",
 	hair_color: "none",
 	height: "184",
+        id: 52,
 	mass: "50",
 	name: "Adi Gallia",
 	skin_color: "dark",
@@ -34,6 +36,7 @@ test("page 1", t => {
 	gender: "male",
 	hair_color: "blond",
 	height: "188",
+        id: 11,
 	mass: "84",
 	name: "Anakin Skywalker",
 	skin_color: "fair",
@@ -43,6 +46,7 @@ test("page 1", t => {
 	gender: "male",
 	hair_color: "brown",
 	height: "unknown",
+        id: 28,
 	mass: "unknown",
 	name: "Arvel Crynyd",
 	skin_color: "fair",
@@ -52,6 +56,7 @@ test("page 1", t => {
 	gender: "female",
 	hair_color: "none",
 	height: "178",
+        id: 44,
 	mass: "55",
 	name: "Ayla Secura",
 	skin_color: "blue",
@@ -61,6 +66,7 @@ test("page 1", t => {
 	gender: "none",
 	hair_color: "none",
 	height: "unknown",
+        id: 85,
 	mass: "unknown",
 	name: "BB8",
 	skin_color: "none",
@@ -70,6 +76,7 @@ test("page 1", t => {
 	gender: "male",
 	hair_color: "black",
 	height: "191",
+        id: 65,
 	mass: "unknown",
 	name: "Bail Prestor Organa",
 	skin_color: "tan",
@@ -79,6 +86,7 @@ test("page 1", t => {
 	gender: "female",
 	hair_color: "black",
 	height: "166",
+        id: 62,
 	mass: "50",
 	name: "Barriss Offee",
 	skin_color: "yellow",
@@ -88,6 +96,7 @@ test("page 1", t => {
 	gender: "male",
 	hair_color: "none",
 	height: "163",
+        id: 47,
 	mass: "65",
 	name: "Ben Quadinaros",
 	skin_color: "grey, green, yellow",
@@ -97,6 +106,7 @@ test("page 1", t => {
 	gender: "female",
 	hair_color: "brown",
 	height: "165",
+        id: 7,
 	mass: "75",
 	name: "Beru Whitesun lars",
 	skin_color: "light",
@@ -115,6 +125,7 @@ test("page 2", t => {
 	gender: "male",
 	hair_color: "none",
 	height: "180",
+        id: 43,
 	mass: "unknown",
 	name: "Bib Fortuna",
 	skin_color: "pale",
@@ -124,6 +135,7 @@ test("page 2", t => {
 	gender: "male",
 	hair_color: "black",
 	height: "183",
+        id: 9,
 	mass: "84",
 	name: "Biggs Darklighter",
 	skin_color: "light",
@@ -133,6 +145,7 @@ test("page 2", t => {
 	gender: "male",
 	hair_color: "black",
 	height: "183",
+        id: 21,
 	mass: "78.2",
 	name: "Boba Fett",
 	skin_color: "fair",
@@ -142,6 +155,7 @@ test("page 2", t => {
 	gender: "male",
 	hair_color: "none",
 	height: "190",
+        id: 23,
 	mass: "113",
 	name: "Bossk",
 	skin_color: "green",
@@ -151,6 +165,7 @@ test("page 2", t => {
 	gender: "n/a",
 	hair_color: "n/a",
 	height: "167",
+        id: 2,
 	mass: "75",
 	name: "C-3PO",
 	skin_color: "gold",
@@ -160,6 +175,7 @@ test("page 2", t => {
 	gender: "female",
 	hair_color: "unknown",
 	height: "unknown",
+        id: 86,
 	mass: "unknown",
 	name: "Captain Phasma",
 	skin_color: "unknown",
@@ -169,6 +185,7 @@ test("page 2", t => {
 	gender: "male",
 	hair_color: "brown",
 	height: "228",
+        id: 13,
 	mass: "112",
 	name: "Chewbacca",
 	skin_color: "unknown",
@@ -178,6 +195,7 @@ test("page 2", t => {
 	gender: "male",
 	hair_color: "brown",
 	height: "183",
+        id: 59,
 	mass: "unknown",
 	name: "Cliegg Lars",
 	skin_color: "fair",
@@ -187,6 +205,7 @@ test("page 2", t => {
 	gender: "female",
 	hair_color: "brown",
 	height: "157",
+        id: 58,
 	mass: "unknown",
 	name: "Cordé",
 	skin_color: "light",
@@ -196,6 +215,7 @@ test("page 2", t => {
 	gender: "male",
 	hair_color: "none",
 	height: "175",
+        id: 42,
 	mass: "80",
 	name: "Darth Maul",
 	skin_color: "red",
@@ -214,6 +234,7 @@ test("filter", t => {
         gender: "male",
         hair_color: "brown",
         height: "unknown",
+        id: 28,
         mass: "unknown",
         name: "Arvel Crynyd",
         skin_color: "fair",
@@ -223,6 +244,7 @@ test("filter", t => {
         gender: "female",
         hair_color: "brown",
         height: "165",
+        id: 7,
         mass: "75",
         name: "Beru Whitesun lars",
         skin_color: "light",
@@ -232,6 +254,7 @@ test("filter", t => {
         gender: "male",
         hair_color: "brown",
         height: "228",
+        id: 13,
         mass: "112",
         name: "Chewbacca",
         skin_color: "unknown",
@@ -241,6 +264,7 @@ test("filter", t => {
         gender: "male",
         hair_color: "brown",
         height: "183",
+        id: 59,
         mass: "unknown",
         name: "Cliegg Lars",
         skin_color: "fair",
@@ -250,6 +274,7 @@ test("filter", t => {
         gender: "female",
         hair_color: "brown",
         height: "157",
+        id: 58,
         mass: "unknown",
         name: "Cordé",
         skin_color: "light",
@@ -259,6 +284,7 @@ test("filter", t => {
         gender: "female",
         hair_color: "brown",
         height: "165",
+        id: 63,
         mass: "unknown",
         name: "Dormé",
         skin_color: "light",
@@ -268,6 +294,7 @@ test("filter", t => {
         gender: "male",
         hair_color: "brown",
         height: "180",
+        id: 14,
         mass: "80",
         name: "Han Solo",
         skin_color: "fair",
@@ -277,6 +304,7 @@ test("filter", t => {
         gender: "male",
         hair_color: "brown",
         height: "180",
+        id: 18,
         mass: "110",
         name: "Jek Tono Porkins",
         skin_color: "fair",
@@ -286,6 +314,7 @@ test("filter", t => {
         gender: "female",
         hair_color: "brown",
         height: "150",
+        id: 5,
         mass: "49",
         name: "Leia Organa",
         skin_color: "light",
@@ -295,6 +324,7 @@ test("filter", t => {
         gender: "male",
         hair_color: "brown, grey",
         height: "178",
+        id: 6,
         mass: "120",
         name: "Owen Lars",
         skin_color: "light",
@@ -313,9 +343,73 @@ test("complex filter", t => {
 	gender: "male",
 	hair_color: "black",
 	height: "137",
+        id: 38,
 	mass: "unknown",
 	name: "Watto",
 	skin_color: "blue, grey",
+      }
+    ]
+  });
+});
+
+test("filter page", t => {
+  t.deepEqual(Index.filterPage({column: "eye_color", filter: null}), {
+    total: 15,
+    data: [
+      {
+	id: 15,
+	value: "black",
+      }, {
+	id: 1,
+	value: "blue",
+      }, {
+	id: 10,
+	value: "blue-gray",
+      }, {
+	id: 5,
+	value: "brown",
+      }, {
+	id: 82,
+	value: "dark",
+      }, {
+	id: 75,
+	value: "gold",
+      }, {
+	id: 77,
+	value: "green, yellow",
+      }, {
+	id: 17,
+	value: "hazel",
+      }, {
+	id: 16,
+	value: "orange",
+      }, {
+	id: 43,
+	value: "pink",
+      }
+    ]
+  });
+});
+
+test("filter page", t => {
+  t.deepEqual(Index.filterPage({column: "eye_color", filter: "b"}), {
+    total: 5,
+    data: [
+      {
+	id: 15,
+	value: "black",
+      }, {
+	id: 1,
+	value: "blue",
+      }, {
+	id: 10,
+	value: "blue-gray",
+      }, {
+	id: 5,
+	value: "brown",
+      }, {
+	id: 73,
+	value: "red, blue",
       }
     ]
   });
