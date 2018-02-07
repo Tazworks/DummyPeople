@@ -1,3 +1,3 @@
-# Star Peeps
+# Dummy People
 
-[![CircleCI](https://circleci.com/gh/AlchemyAlcove/star-ppeps/tree/master.svg?style=svg&circle-token=fbf647c85c63e5cc1da67c51a0db06990dbd7868)](https://circleci.com/gh/AlchemyAlcove/star-peeps/tree/master)
+[![CircleCI](https://circleci.com/gh/Tazworks/people.svg?style=svg&circle-token=16625ea83029f5189254831f76a6996c222f3c36)](https://circleci.com/gh/Tazworks/people)
