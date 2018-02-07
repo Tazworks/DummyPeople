@@ -1,12 +1,12 @@
 {
-  "name": "star-peeps",
-  "version": "3.0.0",
+  "name": "dummy-people",
+  "version": "1.0.0",
   "private": false,
-  "description": "swapi.co based StarWars people lookup",
+  "description": "Dummy people lookup",
   "author": "Mike Hoffert",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AlchemyAlcove/star-peeps"
+    "url": "https://github.com/TazWorks/DummyPeople"
   },
   "main": "index.js",
   "scripts": {

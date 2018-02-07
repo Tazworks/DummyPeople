@@ -1,3 +1,3 @@
 # Dummy People
 
-[![CircleCI](https://circleci.com/gh/Tazworks/people.svg?style=svg&circle-token=16625ea83029f5189254831f76a6996c222f3c36)](https://circleci.com/gh/Tazworks/people)
+[![CircleCI](https://circleci.com/gh/Tazworks/DummyPeople.svg?style=svg&circle-token=bed4dbd3be0d0b4965ae235635a1cc4b40533264)](https://circleci.com/gh/Tazworks/DummyPeople)
