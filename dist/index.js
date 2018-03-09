@@ -44,12 +44,12 @@ module.exports = {
   },
   page: function page(_ref2) {
     var filters = _ref2.filters,
-        _page = _ref2.page,
+        page = _ref2.page,
         sortCol = _ref2.sortCol,
         sortDir = _ref2.sortDir;
 
-    var start = (_page - 1) * 10;
-    var end = _page * 10;
+    var start = (page - 1) * 10;
+    var end = page * 10;
     var data = (0, _lodash.filter)(_people2.default, function (person) {
       var flag = true;
       filters.forEach(function (_ref3) {
