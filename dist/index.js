@@ -57,11 +57,19 @@ module.exports = {
             values = _ref3.values;
 
         var matches = false;
-        values.forEach(function (value) {
-          if (person[name].indexOf(value) > -1) {
-            matches = true;
+        if (!(0, _lodash.isNil)(person[name])) {
+          values.forEach(function (value) {
+            if (person[name].indexOf(value) > -1) {
+              matches = true;
+            }
+          });
+        } else {
+          for (var key in person) {
+            if (typeof person[key] === "string" && person[key].indexOf(values[0]) > -1) {
+              matches = true;
+            }
           }
-        });
+        }
         if (!matches) {
           flag = false;
         }
