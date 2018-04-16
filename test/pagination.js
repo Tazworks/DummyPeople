@@ -2,7 +2,7 @@ import test from "ava";
 import Index from "../src/index";
 
 test("page 1", t => {
-  t.deepEqual(Index.page({filters: [], page: 1, sortCol: "name", sortDir: "asc"}), {
+  t.deepEqual(Index.page({filters: {}, page: 1, sortCol: "name", sortDir: "asc"}), {
     total: 46,
     data: [
       {
@@ -81,7 +81,7 @@ test("page 1", t => {
 });
 
 test("page 2", t => {
-  t.deepEqual(Index.page({filters: [], page: 2, sortCol: "name", sortDir: "asc"}), {
+  t.deepEqual(Index.page({filters: {}, page: 2, sortCol: "name", sortDir: "asc"}), {
     total: 46,
     data: [
       {
