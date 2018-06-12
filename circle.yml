@@ -1,14 +1,12 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/veil
+    working_directory: ~/dummy
     docker:
       - image: circleci/node:7.9
     steps:
       - checkout
-      - run: npm install;
-#      - run: mix local.rebar —-force
-#      - run: mix local.hex --force
+      - run: npm install
       - run: npm run lint
       - run: npm run lint:css
       - run: npm test
