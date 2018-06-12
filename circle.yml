@@ -1,15 +1,14 @@
-machine:
-  node:
-    version: 7.9.0
-
-dependencies:
-  override:
-    - npm install
-
-  cache_directories:
-    - node_modules/
-
-test:
-  override:
-    - npm test
-    - npm run lint
+version: 2
+jobs:
+  build:
+    working_directory: ~/veil
+    docker:
+      - image: circleci/node:7.9
+    steps:
+      - checkout
+      - run: npm install;
+#      - run: mix local.rebar —-force
+#      - run: mix local.hex --force
+      - run: npm run lint
+      - run: npm run lint:css
+      - run: npm test
