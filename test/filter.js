@@ -2,7 +2,7 @@ import test from "ava";
 import Index from "../src/index";
 
 test("filter", t => {
-  t.deepEqual(Index.page({filters: [{name: "hair_color", values: ["brown"]}], page: 1, sortCol: "name", sortDir: "asc"}), {
+  t.deepEqual(Index.page({filters: {hair_color: "brown"}, page: 1, sortCol: "name", sortDir: "asc"}), {
     total: 26,
     data: [
       {

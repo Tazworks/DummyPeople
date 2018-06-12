@@ -52,20 +52,15 @@ module.exports = {
     var end = page * 10;
     var data = (0, _lodash.filter)(_people2.default, function (person) {
       var flag = true;
-      filters.forEach(function (_ref3) {
-        var name = _ref3.name,
-            values = _ref3.values;
-
+      for (var key in filters) {
         var matches = false;
-        if (!(0, _lodash.isNil)(person[name])) {
-          values.forEach(function (value) {
-            if (person[name].indexOf(value) > -1) {
-              matches = true;
-            }
-          });
+        if (!(0, _lodash.isNil)(person[key])) {
+          if (person[key].indexOf(filters[key]) > -1) {
+            matches = true;
+          }
         } else {
-          for (var key in person) {
-            if (typeof person[key] === "string" && person[key].indexOf(values[0]) > -1) {
+          for (var personKey in person) {
+            if (typeof person[personKey] === "string" && person[personKey].indexOf(filters[key]) > -1) {
               matches = true;
             }
           }
@@ -73,7 +68,7 @@ module.exports = {
         if (!matches) {
           flag = false;
         }
-      });
+      }
 
       return flag;
     });

@@ -37,17 +37,15 @@ module.exports = {
     let end = page * 10;
     const data = filter(People, (person) => {
       let flag = true;
-      filters.forEach(({name, values}) => {
+      for(let key in filters) {
         let matches = false;
-        if(!isNil(person[name])) {
-          values.forEach((value) => {
-            if(person[name].indexOf(value) > -1) {
-              matches = true;
-            }
-          });
+        if(!isNil(person[key])) {
+          if(person[key].indexOf(filters[key]) > -1) {
+            matches = true;
+          }
         } else {
-          for(var key in person) {
-            if(typeof(person[key]) === "string" && person[key].indexOf(values[0]) > -1) {
+          for(var personKey in person) {
+            if(typeof(person[personKey]) === "string" && person[personKey].indexOf(filters[key]) > -1) {
               matches = true;
             }
           }
@@ -55,7 +53,7 @@ module.exports = {
         if(!matches) {
           flag = false;
         }
-      });
+      }
 
       return(flag);
     });
