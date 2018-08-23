@@ -53,20 +53,22 @@ module.exports = {
     var data = (0, _lodash.filter)(_people2.default, function (person) {
       var flag = true;
       for (var key in filters) {
-        var matches = false;
-        if (!(0, _lodash.isNil)(person[key])) {
-          if (person[key].indexOf(filters[key]) > -1) {
-            matches = true;
-          }
-        } else {
-          for (var personKey in person) {
-            if (typeof person[personKey] === "string" && person[personKey].indexOf(filters[key]) > -1) {
+        if (!(0, _lodash.isNil)(filters[key]) || !(0, _lodash.isEmpty)(filters[key])) {
+          var matches = false;
+          if (!(0, _lodash.isNil)(person[key])) {
+            if (person[key].toLowerCase().indexOf(filters[key].toLowerCase()) > -1) {
               matches = true;
             }
+          } else {
+            for (var personKey in person) {
+              if (typeof person[personKey] === "string" && person[personKey].indexOf(filters[key]) > -1) {
+                matches = true;
+              }
+            }
           }
-        }
-        if (!matches) {
-          flag = false;
+          if (!matches) {
+            flag = false;
+          }
         }
       }
 
