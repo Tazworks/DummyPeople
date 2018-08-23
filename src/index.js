@@ -38,20 +38,22 @@ module.exports = {
     const data = filter(People, (person) => {
       let flag = true;
       for(let key in filters) {
-        let matches = false;
-        if(!isNil(person[key])) {
-          if(person[key].indexOf(filters[key]) > -1) {
-            matches = true;
-          }
-        } else {
-          for(var personKey in person) {
-            if(typeof(person[personKey]) === "string" && person[personKey].indexOf(filters[key]) > -1) {
+        if(!isNil(filters[key]) || !isEmpty(filters[key])) {
+          let matches = false;
+          if(!isNil(person[key])) {
+            if(person[key].toLowerCase().indexOf(filters[key].toLowerCase()) > -1) {
               matches = true;
             }
+          } else {
+            for(var personKey in person) {
+              if(typeof(person[personKey]) === "string" && person[personKey].indexOf(filters[key]) > -1) {
+                matches = true;
+              }
+            }
           }
-        }
-        if(!matches) {
-          flag = false;
+          if(!matches) {
+            flag = false;
+          }
         }
       }
 

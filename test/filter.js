@@ -2,7 +2,7 @@ import test from "ava";
 import Index from "../src/index";
 
 test("filter", t => {
-  t.deepEqual(Index.page({filters: {hair_color: "brown"}, page: 1, sortCol: "name", sortDir: "asc"}), {
+  t.deepEqual(Index.page({filters: {hair_color: "brown", eye_color: null}, page: 1, sortCol: "name", sortDir: "asc"}), {
     total: 26,
     data: [
       {
@@ -75,6 +75,22 @@ test("filter", t => {
 	height: "224",
 	id: 35,
 	name: "Lina Ditzel",
+      }
+    ]
+  });
+});
+
+test("filter case insensitive", t => {
+  t.deepEqual(Index.page({filters: {name: "albertina", eye_color: null}, page: 1, sortCol: "name", sortDir: "asc"}), {
+    total: 1,
+    data: [
+      {
+	eye_color: "blue",
+	gender: "female",
+	hair_color: "brown",
+	height: "165",
+	id: 7,
+	name: "Albertina Chominski",
       }
     ]
   });
